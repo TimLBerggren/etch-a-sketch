@@ -20,3 +20,17 @@ body {
     width: 30px;
     height: 30px;
 }
+
+button {
+    margin: 25px;
+    padding: 10px 32px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    border-color: black;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(227, 227, 227);
+}

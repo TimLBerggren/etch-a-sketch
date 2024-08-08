@@ -1,18 +1,21 @@
 let gridsize = 25;
-const grid = document.querySelector('.grid');
 
-grid.innerHTML = '';
+function createGrid() {
+    const grid = document.querySelector('.grid');
 
-grid.style.gridTemplateColumns = `repeat(${gridsize}, 1fr)`;
-grid.style.gridTemplateRows = `repeat(${gridsize}, 1fr)`;
+    grid.innerHTML = '';
 
-for (let i = 0; i < gridsize; i++) {
-    for (let j = 0; j < gridsize; j++) {
-        const cell = document.createElement('div');
-        cell.classList.add('cell');
-        grid.appendChild(cell);
+    grid.style.gridTemplateColumns = `repeat(${gridsize}, 1fr)`;
+    grid.style.gridTemplateRows = `repeat(${gridsize}, 1fr)`;
+
+    for (let i = 0; i < gridsize; i++) {
+        for (let j = 0; j < gridsize; j++) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            grid.appendChild(cell);
+        }
+        gridColorChange();
     }
-    gridColorChange();
 }
 
 let randomColor = function() {
@@ -32,3 +35,16 @@ function gridColorChange() {
             }); 
         });
 }
+
+function clearGrid() {
+    createGrid.innerHTML = '';
+    createGrid();
+} 
+
+let clearBtn = document.querySelector('.clearBtn');
+clearBtn.addEventListener("click", () => {
+    clearGrid();
+    console.log('Grid is not being produced');
+})
+
+createGrid();
