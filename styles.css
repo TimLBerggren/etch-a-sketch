@@ -40,12 +40,35 @@ button:hover {
     margin: 5px;
 }
 
-.slider {
+input[type="range"] {
     -webkit-appearance: none;
-    border-radius: 7px;
+    background: lightgrey;
+    width: 200px;
+    border-radius: 9px;
+    outline: none;
 }
 
-input {
-    background: lightgrey;
-    color: black;
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 24px;
+    height: 24px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
 }
