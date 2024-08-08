@@ -44,7 +44,6 @@ function clearGrid() {
 let clearBtn = document.querySelector('.clearBtn');
 clearBtn.addEventListener("click", () => {
     clearGrid();
-    console.log('Grid is not being produced');
 })
 
 createGrid();
