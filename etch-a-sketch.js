@@ -12,9 +12,23 @@ for (let i = 0; i < gridsize; i++) {
         cell.classList.add('cell');
         grid.appendChild(cell);
     }
+    gridColorChange();
 }
 
+let randomColor = function() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
 
-// function gridColorChange {
-//     for (let )
-// }
+function gridColorChange() {
+    let items = document.querySelectorAll('.cell');
+        items.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.style.backgroundColor = `${randomColor()}`;
+            }); 
+        });
+}
