@@ -13,3 +13,8 @@ for (let i = 0; i < gridsize; i++) {
         grid.appendChild(cell);
     }
 }
+
+
+// function gridColorChange {
+//     for (let )
+// }
