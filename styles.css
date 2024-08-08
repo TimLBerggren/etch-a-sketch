@@ -4,7 +4,8 @@ body {
     height: 100%;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
+    flex-direction: column;
 }
 
 .grid {
