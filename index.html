@@ -8,13 +8,13 @@
     <script src="./etch-a-sketch.js" defer></script>
 </head>
 <body>
-    <button class="clearBtn" >Clear</button>
+    <button class="clearBtn">Clear</button>
     <div class="container">
-        <div><input type="text"  placeholder="Select grid size" value="16" onchange="gridSize(this.value)" class="textInput"/>
-        <button>Set grid size</button>
-        <h1 class="prompt">Enter a value to select grid size.</h1>
-    </div>
+        <button class="gridSizeBtn">Select grid size</button>
+        <div class="slidercontainer">
+            <input type="range" min="2" max="100" value="50" class="slider" id="myRange">
+        </div>
         <div class="grid"></div>
-</div>
+    </div>
 </body>
 </html>

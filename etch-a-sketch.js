@@ -11,6 +11,11 @@ let gridsize = 20;
 //     }
 // }
 
+// let gridSizeBtn = document.querySelector('.gridSizeBtn');
+// gridSizeBtn.addEventListener("click", () => {
+//     createGrid();
+// })
+
 function createGrid() {
     const grid = document.querySelector('.grid');
 
