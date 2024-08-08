@@ -1,4 +1,15 @@
-let gridsize = 25;
+let gridsize = 20;
+
+// function gridSize(input) {
+//     let prompt = document.querySelector('.prompt')
+//     if (input > 100 || input < 2) {
+//         prompt.textContent = "Enter a value between 2 and 100."
+//     }
+//     else {
+//         createGrid(input)
+//         prompt.textContent = "Grid has been created."
+//     }
+// }
 
 function createGrid() {
     const grid = document.querySelector('.grid');
