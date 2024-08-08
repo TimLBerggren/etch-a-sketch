@@ -1,4 +1,4 @@
-let gridsize = 16;
+let gridsize = 25;
 const grid = document.querySelector('.grid');
 
 grid.innerHTML = '';
@@ -27,7 +27,7 @@ let randomColor = function() {
 function gridColorChange() {
     let items = document.querySelectorAll('.cell');
         items.forEach(item => {
-            item.addEventListener('mouseover', () => {
+            item.addEventListener('mouseout', () => {
                 item.style.backgroundColor = `${randomColor()}`;
             }); 
         });
