@@ -1,20 +1,8 @@
-let gridsize = 20;
+let gridsize = '';
 
-// function gridSize(input) {
-//     let prompt = document.querySelector('.prompt')
-//     if (input > 100 || input < 2) {
-//         prompt.textContent = "Enter a value between 2 and 100."
-//     }
-//     else {
-//         createGrid(input)
-//         prompt.textContent = "Grid has been created."
-//     }
-// }
-
-// let gridSizeBtn = document.querySelector('.gridSizeBtn');
-// gridSizeBtn.addEventListener("click", () => {
-//     createGrid();
-// })
+function getGridSize() {
+    gridsize = Number(window.prompt("Enter a value for the grid size:"));
+}
 
 function createGrid() {
     const grid = document.querySelector('.grid');
@@ -30,8 +18,8 @@ function createGrid() {
             cell.classList.add('cell');
             grid.appendChild(cell);
         }
-        gridColorChange();
     }
+    gridColorChange();
 }
 
 function randomColor() {
@@ -53,7 +41,9 @@ function gridColorChange() {
 }
 
 function clearGrid() {
+    const grid = document.querySelector('.grid');
     createGrid.innerHTML = '';
+    getGridSize();
     createGrid();
 } 
 
@@ -62,4 +52,5 @@ clearBtn.addEventListener("click", () => {
     clearGrid();
 })
 
+getGridSize();
 createGrid();
