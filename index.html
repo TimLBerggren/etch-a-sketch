@@ -11,15 +11,27 @@
     <div class="header">
         <h1>Etch-a-Sketch</h1>
     </div>
+    <div class="btnContainer">
     <button class="clearBtn">Clear</button>
     <button class="gridSizeChangeBtn">Grid dimensions</button>
-    <div class="slidercontainer">
+<!-- TODO: add logic to the slider to change grid size -->
+    <!-- <div class="slidercontainer">
         <input type="range" min="2" max="100" value="50" class="slider" id="myRange">
+    </div> -->
     </div>
     <div class="container">
         <div class="grid-container">
             <div class="grid"></div>
         </div>
     </div>
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+        <a href="https://github.com/TimLBerggren">TimLBerggren</a>
+        </p>
+      </footer>
 </body>
 </html>

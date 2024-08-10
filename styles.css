@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
     align-items: center;
     justify-content: center;
     text-align: left;
@@ -87,4 +86,8 @@ input[type="range"]::-ms-thumb {
     background: black;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.footer {
+    font-weight: bold;
 }
