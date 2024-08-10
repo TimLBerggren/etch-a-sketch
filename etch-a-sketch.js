@@ -1,7 +1,17 @@
 let gridsize = '';
+let minGridSize = 2
+let maxGridSize = 100
 
-function getGridSize() {
-    gridsize = Number(window.prompt("Enter a value for the grid size:"));
+function isValidGridSize(value, min, max) {
+    return value >= min && value <= max;
+}
+
+function getGridSize(){
+        gridsize = Number(window.prompt("Enter a value for the grid size (between 2 and 100):"));
+        
+        while (!isValidGridSize(gridsize, minGridSize, maxGridSize)) {
+            gridsize = Number(window.prompt("Please enter a valid value for the grid size (between 2 and 100):"));
+        }
 }
 
 function setGridDimensions(grid, gridsize) {
