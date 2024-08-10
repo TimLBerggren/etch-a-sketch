@@ -63,5 +63,11 @@ clearBtn.addEventListener("click", () => {
     clearGrid();
 })
 
+let gridSizeChangeBtn = document.querySelector('.gridSizeChangeBtn');
+gridSizeChangeBtn.addEventListener("click", () => {
+    getGridSize();
+    createGrid();
+})
+
 getGridSize();
 createGrid();
