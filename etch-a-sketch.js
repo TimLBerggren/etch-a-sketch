@@ -4,21 +4,34 @@ function getGridSize() {
     gridsize = Number(window.prompt("Enter a value for the grid size:"));
 }
 
-function createGrid() {
-    const grid = document.querySelector('.grid');
-
-    grid.innerHTML = '';
-
+function setGridDimensions(grid, gridsize) {
     grid.style.gridTemplateColumns = `repeat(${gridsize}, 1fr)`;
     grid.style.gridTemplateRows = `repeat(${gridsize}, 1fr)`;
+}
 
+function createGridCell() {
+    const cell = document.createElement('div');
+    cell.classList.add('cell');
+    return cell;
+}
+
+function populateGrid(grid, gridsize) {
     for (let i = 0; i < gridsize; i++) {
         for (let j = 0; j < gridsize; j++) {
-            const cell = document.createElement('div');
-            cell.classList.add('cell');
+            const cell = createGridCell();
             grid.appendChild(cell);
         }
     }
+}
+
+function createGrid() {
+    const grid = document.querySelector('.grid');
+    const size = gridsize;
+
+    grid.innerHTML = '';
+
+    setGridDimensions(grid, size);
+    populateGrid(grid, size);
     gridColorChange();
 }
 
