@@ -26,12 +26,11 @@ function populateGrid(grid, gridsize) {
 
 function createGrid() {
     const grid = document.querySelector('.grid');
-    const size = gridsize;
 
     grid.innerHTML = '';
 
-    setGridDimensions(grid, size);
-    populateGrid(grid, size);
+    setGridDimensions(grid, gridsize);
+    populateGrid(grid, gridsize);
     gridColorChange();
 }
 
