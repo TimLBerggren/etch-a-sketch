@@ -53,7 +53,6 @@ function gridColorChange() {
 }
 
 function clearGrid() {
-    const grid = document.querySelector('.grid');
     createGrid.innerHTML = '';
     createGrid();
 } 

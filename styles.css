@@ -11,6 +11,8 @@ body {
 }
 
 .header {
+    font-size: xx-large;
+    font-weight: bold;
     color: rgb(255, 195, 42);
 }
 
