@@ -7,6 +7,11 @@ body {
     text-align: left;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
+    background-color: #78CCCB;
+}
+
+.header {
+    color: goldenrod;
 }
 
 .grid {
