@@ -2,8 +2,8 @@ let gridsize = '';
 let minGridSize = 2
 let maxGridSize = 100
 
-function isValidGridSize(value, min, max) {
-    return value >= min && value <= max;
+function isValidGridSize(userInput, min, max) {
+    return userInput >= min && userInput <= max;
 }
 
 function getGridSize(){
