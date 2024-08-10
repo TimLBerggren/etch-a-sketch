@@ -5,13 +5,14 @@
     <meta name="viewport" content="initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d1d6edd90f.js" crossorigin="anonymous"></script>
     <script src="./etch-a-sketch.js" defer></script>
 </head>
 <body>
     <div class="header">
         <h1>Etch-a-Sketch</h1>
     </div>
-    <div class="btnContainer">
+    <div class="button-container">
     <button class="clearBtn">Clear</button>
     <button class="gridSizeChangeBtn">Grid dimensions</button>
 <!-- TODO: add logic to the slider to change grid size -->
@@ -19,10 +20,8 @@
         <input type="range" min="2" max="100" value="50" class="slider" id="myRange">
     </div> -->
     </div>
-    <div class="container">
-        <div class="grid-container">
-            <div class="grid"></div>
-        </div>
+    <div class="grid-container">
+        <div class="grid"></div>
     </div>
     <footer class="footer">
         <p>
@@ -30,8 +29,9 @@
           <script>
             document.write(new Date().getFullYear())
           </script>
-        <a href="https://github.com/TimLBerggren">TimLBerggren</a>
-        </p>
+          TimLBerggren |
+        <a href="https://github.com/TimLBerggren" target="_blank"><i class="fab fa-github fa-2x"></i></a>            
+    </p>
       </footer>
 </body>
 </html>
